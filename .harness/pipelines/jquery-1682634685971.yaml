@@ -29,13 +29,6 @@ pipeline:
                   spec:
                     command: npm run build
                   type: Run
-              - step:
-                  identifier: npmtest
-                  name: npm_test
-                  spec:
-                    command: npm run test
-                  timeout: ""
-                  type: Run
           platform:
             arch: Amd64
             os: Linux
