@@ -25,9 +25,9 @@ pipeline:
                   type: Run
               - step:
                   identifier: nonbuild
-                  name: npm_install
+                  name: npm_build
                   spec:
-                    command: npm build
+                    command: npm run build
                   type: Run
               - step:
                   identifier: npmtest
