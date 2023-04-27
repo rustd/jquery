@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_jquery_1682634690312-pr-trigger-input-set
+  identifier: Build_jquery_1682634690312prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_jquery_1682634690312
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
