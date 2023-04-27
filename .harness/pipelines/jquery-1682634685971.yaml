@@ -22,7 +22,12 @@ pipeline:
                   name: npm_install
                   spec:
                     command: npm install
-                  timeout: ""
+                  type: Run
+              - step:
+                  identifier: nonbuild
+                  name: npm_install
+                  spec:
+                    command: npm build
                   type: Run
               - step:
                   identifier: npmtest
